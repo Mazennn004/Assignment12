@@ -1,0 +1,48 @@
+.main-bg-color{
+    background-color: #F7ECDE;
+}
+.header-font{
+    font-family: Pacifico;
+}
+.main-font{
+    font-family:Righteous;
+}
+.sub-header-font{
+    font-family: "PT Sans Caption";
+}
+.header{
+    width:fit-content;
+  
+}
+.header::after{
+    content:"";
+    background-color: #FEC260;
+    width:100%;
+   z-index: -999;
+    
+    position: absolute;
+    left:0;
+    right:0;
+    top:40px;
+    bottom:0;
+    transition: all 0.4s;
+}
+.header:hover::after{
+    top:0;
+    
+}
+
+.border-dotted{
+    border: 1px dotted black;
+    border-left:none;
+    border-right:none;
+}
+.main-font{
+    color:#3ca55c;
+}
+.form-control:focus {
+   
+    border-color:#FBC29D !important;
+    box-shadow:0 0 .25rem #d87736 !important;
+    
+}
