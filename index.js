@@ -79,9 +79,10 @@ else{
 
 }
 //activating the add fucntion on the submit button
-submitButton.addEventListener("click",function(){
+submitButton.addEventListener("click",function(e){
     addSite();
 });
+
 
 //function that show a layer if inputs are invalid
 
@@ -101,6 +102,7 @@ hideInvalidLayer();
 document.getElementById('layerContainer').addEventListener('click',function(e){
     e.stopPropagation(); //stop bubbling
 });
+
 invalidLayer.addEventListener('click',function(){
     hideInvalidLayer();
     
